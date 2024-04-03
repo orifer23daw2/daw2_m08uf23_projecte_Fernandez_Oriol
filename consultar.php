@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['auth']) || $_SESSION['auth'] !== true) {
+    header("Location: login.php");
+    exit();
+}
 require "vendor/autoload.php";
 use Laminas\Ldap\Ldap;
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['unidad_organizativa']) && isset($_GET['identificador'])) {

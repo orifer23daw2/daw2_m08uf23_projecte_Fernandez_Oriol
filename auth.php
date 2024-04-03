@@ -1,4 +1,5 @@
 <?php
+session_start();
     require 'vendor/autoload.php';
 	use Laminas\Ldap\Ldap;
 
@@ -17,6 +18,7 @@
 	   $ctsnya=$_POST['cts'];
 	   try{
 	       $ldap->bind($dn,$ctsnya);
+	       $_SESSION['auth'] = true;
 	       header("location: menu.php");
 	   } catch (Exception $e){
 	       echo "<b>Contrasenya incorrecta</b><br><br>";	       
