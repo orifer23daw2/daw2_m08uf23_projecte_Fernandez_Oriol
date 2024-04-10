@@ -5,7 +5,7 @@
 		</title>
 	</head>
 	<body>
-		<form action="http://zend-orfefo.fjeclot.net/projecte/auth.php" method="POST">
+		<form action="https://zend-orfefo.fjeclot.net/projecte/auth.php" method="POST">
 			Usuari amb permisos d'administració LDAP: <input type="text" name="adm"><br>
 			Contrasenya de l'usuari: <input type="password" name="cts"><br>
 			<input type="submit" value="Envia" />

@@ -32,6 +32,6 @@ session_start();
 		</title>
 	</head>
 	<body>
-		<a href="http://zend-orfefo.fjeclot.net/projecte/index.php">Torna a la pàgina inicial</a>
+		<a href="https://zend-orfefo.fjeclot.net/projecte/index.php">Torna a la pàgina inicial</a>
 	</body>
 </html>
